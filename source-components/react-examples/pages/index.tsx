@@ -5,105 +5,105 @@ const DirectoryPage = () => {
     return <>
         <ul>
             <li>
-                <Link href="/zoom-image-hover-effect">
+                <Link href="/source-components/react-examples/pages/zoom-image-hover-effect">
                     <a>
                         Zoom Image Hover Effect
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/custom-radio">
+                <Link href="/source-components/react-examples/pages/custom-radio">
                     <a>
                         Custom Radios
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/css-flex-box-responsive">
+                <Link href="/source-components/react-examples/pages/css-flex-box-responsive">
                     <a>
                         Flex Box Responsive
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/social-buttons">
+                <Link href="/source-components/react-examples/pages/social-buttons">
                     <a>
                         Social Buttons
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/input-search">
+                <Link href="/source-components/react-examples/pages/input-search">
                     <a>
                         Search Input
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/input-example">
+                <Link href="/source-components/react-examples/pages/input-example">
                     <a>
                         Input Example
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/theme-switcher">
+                <Link href="/source-components/react-examples/pages/theme-switcher">
                     <a>
                         Theme Switcher
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/custom-slider-range">
+                <Link href="/source-components/react-examples/pages/custom-slider-range">
                     <a>
                         Custom Slider Range
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/profile-card">
+                <Link href="/source-components/react-examples/pages/profile-card">
                     <a>
                         Profile Card
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/menu-items-hover">
+                <Link href="/source-components/react-examples/pages/menu-items-hover">
                     <a>
                         Menu Items Hover 
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/card-scroll-snap">
+                <Link href="/source-components/react-examples/pages/card-scroll-snap">
                     <a>
                         Card Scroll Snap
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/custom-radio">
+                <Link href="/source-components/react-examples/pages/custom-radio">
                     <a>
                         Custom Radio
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/custom-loader-v1">
+                <Link href="/source-components/react-examples/pages/custom-loader-v1">
                     <a>
                         Pure CSS Loader (v1)
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/custom-loader">
+                <Link href="/source-components/react-examples/pages/custom-loader">
                     <a>
                         Pure CSS Loader
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="/3d-gallery">
+                <Link href="/source-components/react-examples/pages/3d-gallery">
                     <a>
                         3D Gallery
                     </a>
