@@ -1,12 +1,13 @@
 import './App.css';
 import {Container} from "./components/Container";
+import {DarkProductCard} from "./components/product-cards/DarkProductCard";
 
 
 function App() {
     return (
         <div className="App">
             <Container>
-                {/* Сюда можно добавить дочерние элементы для Container */}
+                <DarkProductCard/>
             </Container>
         </div>
     );
