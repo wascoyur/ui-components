@@ -1,6 +1,7 @@
 import React from 'react';
 import './dark-product-card.scss';
 
+
 export const DarkProductCard = () => {
     return (
         <div className="card">
