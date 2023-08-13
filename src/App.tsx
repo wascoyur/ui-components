@@ -1,13 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Container} from "./components/Container";
+
 
 function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+    return (
+        <div className="App">
+            <Container>
+                {/* Сюда можно добавить дочерние элементы для Container */}
+            </Container>
+        </div>
+    );
 }
 
 export default App;
