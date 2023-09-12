@@ -3,7 +3,7 @@
 
 :root {
     --primary: #DD946F ;
-    --primary-hover: #CD7D7C;                
+    --primary-hover: #CD7D7C;
     --secondary: #EFD0F8;
     --secondary-hover: #B8A1D9;
     --aura: #9265CA80;
@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Mulish;
+    font-family: Mulish, serif;
 }
 
 .background {
@@ -38,30 +38,19 @@
     z-index: 2;
 }
 
-.menu__bar {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding-right: 24px;
-    gap: 32px;
-    background-color: var(--background);
-    height: 60px;
-}
+
 
 .menu-icon {
     cursor: pointer;
     display: flex;
 }
 
-.navigation {    
+.navigation {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     gap: 24px;
-    padding: 0px;
+    padding: 0;
     background-color: var(--background);
 }
 
@@ -77,11 +66,11 @@
     0% { opacity: 0 }
     100% { opacity: 0.6 }
 }
-                    
+
 .navigation > li {
   display: flex;
   position: relative;
-  padding: 0px;
+  padding: 0;
   color: white;
   cursor: pointer;
   width: max-content;
