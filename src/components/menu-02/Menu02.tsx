@@ -33,28 +33,18 @@ type NavigationProps ={
 }
 
 const Navigation: React.FC<NavigationProps> = ({ isMobileMenuOpen }) => {
+
+    const menuItems=()=>{
+        const items=[`Менюшки`,`Кнопки`,`Продуктовые карточки`,`футер`,"галерея" ,"поле ввода" , "Логин","Нотифай","Параллакс","Оценка","Карточка профиля","Реакт примеры","Скролл","сайдбар", "социконки"]
+        return items.map(i =>(<li><a>
+            {i}
+        </a></li>))
+    }
+
     return (
         <ul className={`navigation ${isMobileMenuOpen ? 'navigation--mobile' : ''}`}>
-            <li>
-                <a href="#services" title="Services">
-                    Services
-                </a>
-            </li>
-            <li>
-                <a href="#blog" title="Blog">
-                    Blog
-                </a>
-            </li>
-            <li>
-                <a href="#about" title="About">
-                    About
-                </a>
-            </li>
-            <li>
-                <a href="#contact-us" title="Contact Us">
-                    Contact Us
-                </a>
-            </li>
+            {menuItems()}
+
         </ul>
     );
 };
