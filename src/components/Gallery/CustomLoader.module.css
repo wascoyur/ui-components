@@ -1,0 +1,77 @@
+.imageContainer {
+  transform: rotateX(51deg) rotateZ(43deg);
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tile1, .tile2, .tile3, .tile4 {
+  display: grid;
+  position: relative;
+  cursor: pointer;
+}
+
+.tile1 > img, .tile2 > img, .tile3 > img, .tile4 > img {
+  top: 0;
+  left: 0;
+  transition:
+          .4s ease-in-out top,
+          .4s ease-in-out left,
+          .4s ease-in-out transform,
+          .4s ease-in-out box-shadow;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.tile1 > img {
+  box-shadow: 3px 3px rgba(192,37,162, 0.4);
+}
+
+.tile2 > img {
+  box-shadow: 3px 3px rgba(253,219,90, 0.4);
+}
+
+.tile3 > img {
+  box-shadow: 3px 3px rgba(41,153,192, 0.4);
+}
+
+.tile4 > img {
+  box-shadow: 3px 3px rgba(192,37,162, 0.4);
+}
+
+.tile1 > img:hover, .tile2 > img:hover, .tile3 > img:hover, .tile4 > img:hover {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  transition:
+          .4s ease-in-out top,
+          .4s ease-in-out left,
+          .4s ease-in-out transform,
+          .4s ease-in-out box-shadow;
+}
+
+.tile1 > img:hover {
+  box-shadow: 5px 5px rgba(192,37,162, 0.4),
+  10px 10px rgba(192,37,162, 0.3), 15px 15px rgba(192,37,162, 0.2),
+  20px 20px rgba(192,37,162, 0.1), 25px 25px rgba(192,37,162, 0.05);
+}
+
+.tile2 > img:hover {
+  box-shadow: 5px 5px rgba(253,219,90, 0.4),
+  10px 10px rgba(253,219,90, 0.3), 15px 15px rgba(253,219,90, 0.2),
+  20px 20px rgba(253,219,90, 0.1), 25px 25px rgba(253,219,90, 0.05);
+}
+
+.tile3 > img:hover {
+  box-shadow: 5px 5px rgba(41,153,192, 0.4),
+  10px 10px rgba(41,153,192, 0.3), 15px 15px rgba(41,153,192, 0.2),
+  20px 20px rgba(41,153,192, 0.1), 25px 25px rgba(41,153,192, 0.05);
+}
+
+.tile4 > img:hover {
+  box-shadow: 5px 5px rgba(192,37,162, 0.4),
+  10px 10px rgba(192,37,162, 0.3), 15px 15px rgba(192,37,162, 0.2),
+  20px 20px rgba(192,37,162, 0.1), 25px 25px rgba(192,37,162, 0.05);
+}

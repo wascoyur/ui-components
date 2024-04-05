@@ -103,7 +103,7 @@ const DirectoryPage = () => {
                 </Link>
             </li>
             <li>
-                <Link href="/source-components/react-examples/pages/3d-gallery">
+                <Link href="/src/components/Gallery/3d-gallery">
                     <a>
                         3D Gallery
                     </a>

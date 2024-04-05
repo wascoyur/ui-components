@@ -27,16 +27,16 @@ body {
 }
 
 .parallax-image-01 {
-    background-image: url("autumn_forest.jpg");
+    background-image: url("./assets/autumn_forest.jpg");
 }
 
 .parallax-image-02 {
-    background-image: url("forest_pathway.jpg");
+    background-image: url("./assets/forest_pathway.jpg");
 
 }
 
 .parallax-image-03 {
-    background-image: url("winter_forest.jpg");
+    background-image: url("./assets/winter_forest.jpg");
 }
 section {
     padding: 64px;
@@ -46,4 +46,3 @@ section > h2 {
     text-transform: uppercase;
     margin-bottom: 24px;
 }
-  
