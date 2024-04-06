@@ -1,36 +1,34 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
 :root {
-    --primary-color: #090E14;
-    --text: white;
-    --sidebar-gray: #111926;
-    --sidebar-gray-light: #D8DCE0;
-    --sidebar-gray-background: #373E4A;
-    --success: #00C896;
+  --primary-color: #090e14;
+  --text: white;
+  --sidebar-gray: #111926;
+  --sidebar-gray-light: #d8dce0;
+  --sidebar-gray-background: #373e4a;
+  --success: #00c896;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Mulish;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mulish;
 }
 
-
 nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background-color: var(--primary-color);
-    width: 18rem;
-    overflow-x: hidden;
-    padding: 1.8rem 0.85rem;
-    color: var(--text);
-    display: flex;
-    flex-direction: column;
-    transition: width 0.5s ease-in-out;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--primary-color);
+  width: 18rem;
+  overflow-x: hidden;
+  padding: 1.8rem 0.85rem;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  transition: width 0.5s ease-in-out;
 }
 
 main {
@@ -42,7 +40,6 @@ main {
 body.collapsed nav {
   width: 80px;
 }
-
 
 body.collapsed .hide {
   opacity: 0;
@@ -91,7 +88,6 @@ body.collapsed .sidebar-top {
   cursor: pointer;
   transition: 0.3s;
 }
-
 
 .expand-btn svg {
   stroke: white;
@@ -145,7 +141,8 @@ body.collapsed .expand-btn svg {
   opacity: 1;
 }
 
-.sidebar-links li a:hover, .sidebar-links .active {
+.sidebar-links li a:hover,
+.sidebar-links .active {
   width: 100%;
   text-decoration: none;
   background-color: var(--sidebar-gray-background);

@@ -1,10 +1,12 @@
-import React from 'react';
-import CardScrollSnap from '@components/CardScrollSnap';
+import React from "react";
+import CardScrollSnap from "@components/CardScrollSnap";
 
 const Page = () => {
-    return <>
-        <CardScrollSnap />
+  return (
+    <>
+      <CardScrollSnap />
     </>
-}
+  );
+};
 
 export default Page;

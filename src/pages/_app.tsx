@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface IAppProps {
   Component: React.FunctionComponent;
@@ -9,10 +9,9 @@ const App: React.FunctionComponent<IAppProps> = ({
   Component,
   pageProps,
 }: IAppProps) => {
-
   return (
-    <div >
-        <Component {...pageProps} />
+    <div>
+      <Component {...pageProps} />
     </div>
   );
 };

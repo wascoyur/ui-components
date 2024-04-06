@@ -1,42 +1,37 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 
 html {
-	font-size: 16px;
+  font-size: 16px;
   font-family: Manrope;
   letter-spacing: 0.75px;
 }
 
 * {
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 body {
-	background: white;
+  background: white;
   padding: 0px;
   margin: 0px;
 }
 
 :root {
-  --primary-blue: #5DA8FF;
-  --primary-blue-violet: #605DFF;
-  --primary-violet: #AD63F6;
+  --primary-blue: #5da8ff;
+  --primary-blue-violet: #605dff;
+  --primary-violet: #ad63f6;
   --text-color: #303651;
   --text-color-neutral: #697089;
-  --background-blue: #E5F1FF;
+  --background-blue: #e5f1ff;
 }
 
 .gradient-text {
-  background-image: linear-gradient(
-    90.65deg, 
-    #605DFF 41.17%, 
-    #AD63F6 92.13%
-  );
+  background-image: linear-gradient(90.65deg, #605dff 41.17%, #ad63f6 92.13%);
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
 
@@ -93,7 +88,7 @@ body {
   padding: 48px 32px;
   cursor: pointer;
   border: 1px solid var(--primary-blue);
-  background: #F7FAFF;
+  background: #f7faff;
 }
 
 .pricing-card--primary {
@@ -127,7 +122,7 @@ body {
 }
 
 .pricing-card > .divider {
-  border: 1px solid #E6E8F0;
+  border: 1px solid #e6e8f0;
 }
 
 .pricing-card > .enroll {
@@ -140,7 +135,7 @@ body {
   justify-content: center;
   min-height: 48px;
   border-radius: 8px;
-  background: #605DFF1A;
+  background: #605dff1a;
   color: var(--primary-blue-violet);
   text-decoration: none;
   letter-spacing: 0.75px;
@@ -154,8 +149,12 @@ body {
 
 .pricing-card--primary > .enroll {
   background: linear-gradient(
-    90deg, #605DFF, #AD63F6 50%, 
-    #AD63F6 50%, #605DFF 80%, #5DA8FF 100%
+    90deg,
+    #605dff,
+    #ad63f6 50%,
+    #ad63f6 50%,
+    #605dff 80%,
+    #5da8ff 100%
   );
   background-size: 200% 200%;
   background-position: 0% 0%;
@@ -163,7 +162,8 @@ body {
   color: white;
 }
 
-.pricing-card--primary > .enroll:hover, .enroll:focus {
+.pricing-card--primary > .enroll:hover,
+.enroll:focus {
   border: none;
   background-position: 100% 100%;
   transition: background-position 1s;
@@ -190,7 +190,7 @@ body {
   left: -32px;
   width: 32px;
   height: 32px;
-  background-image: url('benefit.svg');
+  background-image: url("benefit.svg");
   background-repeat: no-repeat;
 }
 

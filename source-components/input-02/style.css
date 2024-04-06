@@ -1,14 +1,13 @@
-
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
 :root {
-  --primary: #007FFF;
-  --secondary: #6F7E8C;
+  --primary: #007fff;
+  --secondary: #6f7e8c;
   --text: #212121;
 }
 
@@ -35,12 +34,12 @@ html {
 }
 
 .centering {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: var(--primary);
 }
 
 .input__wrapper {
@@ -70,7 +69,6 @@ html {
   top: 24px;
 }
 
-
 label,
 .input__field:focus ~ .input__label {
   position: absolute;
@@ -99,9 +97,7 @@ label,
   bottom: -10px;
   width: 28px;
   height: 28px;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   transform-origin: center;
   cursor: pointer;
 }
-
-

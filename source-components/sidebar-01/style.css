@@ -1,46 +1,45 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
 :root {
-    --primary-color: #625BFE;
-    --primary-color-dark: #7771F6;    
-    --button-color: #5433FF;
-    --button-color-shadow: #5433FF30;
-    --text-color: white;
+  --primary-color: #625bfe;
+  --primary-color-dark: #7771f6;
+  --button-color: #5433ff;
+  --button-color-shadow: #5433ff30;
+  --text-color: white;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Mulish;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mulish;
 }
 
 .background {
-    content: "";
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    place-items: center;
-    opacity: 0.5;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: auto;
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  opacity: 0.5;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background-color: var(--primary-color);
-    width: 18rem;
-    padding: 1.8rem 0.85rem;
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    transition: width 0.5s ease-in-out;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--primary-color);
+  width: 18rem;
+  padding: 1.8rem 0.85rem;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  transition: width 0.5s ease-in-out;
 }
 
 main {
@@ -48,7 +47,6 @@ main {
   display: flex;
   flex-direction: column;
 }
-
 
 .sidebar-top {
   position: relative;
@@ -88,7 +86,6 @@ main {
   transition: 0.3s;
 }
 
-
 nav:hover .expand-btn,
 .expand-btn.hovered {
   transform: translateY(-50%) translateX(0px);
@@ -99,7 +96,6 @@ nav:hover .expand-btn,
 .sidebar-links ul {
   list-style-type: none;
   position: relative;
- 
 }
 
 .sidebar-links li {
@@ -153,4 +149,3 @@ body.collapsed .hide {
 body.collapsed .expand-btn img {
   transform: rotate(-180deg);
 }
-

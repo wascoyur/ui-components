@@ -1,10 +1,12 @@
-import React from 'react';
-import ThemeSwitcher from '@components/ThemeSwitcher';
+import React from "react";
+import ThemeSwitcher from "@components/ThemeSwitcher";
 
 const ThemeSwitcherPage = () => {
-    return <>
-        <ThemeSwitcher />
+  return (
+    <>
+      <ThemeSwitcher />
     </>
-}
+  );
+};
 
 export default ThemeSwitcherPage;
