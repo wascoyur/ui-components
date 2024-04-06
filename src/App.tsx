@@ -1,11 +1,11 @@
 import "./App.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import MainPage from "./pages/mainPage.tsx";
+import MainPage from "./containers/mainPage.tsx";
 import Menu from "./components/menu-02/Menu02.tsx";
-import ErrorPage from "./pages/404.tsx";
-import MenuTemplate from "./pages/MenuTemplate.tsx";
-import { CardsTemplate } from "./pages/CardsTemplate.tsx";
+import ErrorPage from "./containers/404.tsx";
+import MenuTemplate from "./containers/MenuTemplate.tsx";
+import { CardsTemplate } from "./containers/CardsTemplate.tsx";
 
 function App() {
   const router = createBrowserRouter([

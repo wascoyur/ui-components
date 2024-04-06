@@ -1,6 +1,6 @@
-import React from "react";
-import { Container } from "../Container";
+import { Container } from "../../layouts/Container.tsx";
 import styles from "./CustomLoader.module.css";
+
 const CustomLoader = () => {
   return (
     <Container>
