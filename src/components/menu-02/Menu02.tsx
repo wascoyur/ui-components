@@ -4,7 +4,7 @@ import {CloseIcon} from "./CloseIcon";
 import {BurgerMenu} from "./BurgerMenu";
 import {Logo} from "./Logo";
 
-export const Menu = () => {
+ const Menu = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -48,3 +48,4 @@ const Navigation: React.FC<NavigationProps> = ({ isMobileMenuOpen }) => {
         </ul>
     );
 };
+export default Menu

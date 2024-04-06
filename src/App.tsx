@@ -1,12 +1,14 @@
 import './App.css'
-import {Menu} from "./components/menu-02/Menu02.tsx";
+
+import {RouterProvider} from "react-router-dom";
+import router from "./routes/RootRoute.tsx";
 
 function App() {
 
+
+
   return (
-    <>
-      <Menu/>
-    </>
+      <RouterProvider router={router}/>
   )
 }
 

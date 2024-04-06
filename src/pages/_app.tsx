@@ -1,5 +1,4 @@
 import React from 'react';
-import globalStyle from '@components/global.scss';
 
 interface IAppProps {
   Component: React.FunctionComponent;
@@ -12,7 +11,7 @@ const App: React.FunctionComponent<IAppProps> = ({
 }: IAppProps) => {
 
   return (
-    <div className={globalStyle.Global}>
+    <div >
         <Component {...pageProps} />
     </div>
   );
