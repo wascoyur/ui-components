@@ -1,4 +1,3 @@
-import React from "react";
 import s from "./menu.module.css";
 import classnames from "classnames";
 
@@ -15,7 +14,9 @@ const Menu = () => {
 const Navigation = () => {
   const menuItems = () => {
     const items: { name: string; path: string }[] = Array.from([
-      { name: `Меню`, path: `menus` },
+      { name: `Домой`, path: `/` },
+      { name: `Менюшки`, path: `menus` },
+      { name: `Карточки`, path: `cards` },
       // `Кнопки`,
       // `Продуктовые карточки`,
       // `футер`,
