@@ -1,5 +1,4 @@
-import React from "react";
-import Container from "@components/Container";
+import { Container } from "layouts/Container.tsx";
 
 const FlexGrowPage = () => {
   return (
@@ -13,7 +12,7 @@ const FlexGrowPage = () => {
           <div className="card">Card 5</div>
         </div>
       </Container>
-      <style jsx>
+      <style>
         {`
           .gallery {
             display: flex;

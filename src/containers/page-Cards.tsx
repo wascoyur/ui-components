@@ -1,11 +1,12 @@
-import s from "./CardsTemplates.module.css";
+import s from "./page-cards.module.css";
 import CardScrollSnap from "../components/CardScrollSnap/CardScrollSnap.tsx";
 import CustomLoader from "../components/Gallery/3d-gallery.tsx";
 import DarkProductCard from "../components/product-cards/modern-card/DarkProductCard.tsx";
 import SimpleCard from "components/product-cards/simple-card/SimpleCard.tsx";
 import ProfileCard from "components/ProfileCard/ProfileCard.tsx";
+import TextCut from "components/cut-out-text.tsx";
 
-export function CardsTemplate() {
+export function PageCards() {
   return (
     <div className={s.root}>
       <h1>CardsTemplate</h1>
@@ -21,6 +22,7 @@ export function CardsTemplate() {
           sizes={["0", "1"]}
           imageSrc={"100"}
         />
+        <TextCut />
       </div>
     </div>
   );

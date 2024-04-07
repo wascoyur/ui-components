@@ -1,5 +1,4 @@
-import React from "react";
-import Container from "@components/Container";
+import { Container } from "layouts/Container.tsx";
 
 const CustomLoader = () => {
   return (
@@ -7,7 +6,7 @@ const CustomLoader = () => {
       <Container>
         <span className="loader"></span>
       </Container>
-      <style jsx>
+      <style>
         {`
           .loader {
             width: 54px;
@@ -17,7 +16,7 @@ const CustomLoader = () => {
             position: relative;
             box-sizing: border-box;
             display: inline-block;
-            animation: loader-anim 1s linear infinite;
+            animation: loader-anim 3s linear infinite;
           }
 
           .loader::after {
@@ -36,10 +35,15 @@ const CustomLoader = () => {
 
           @keyframes loader-anim {
             0% {
-              transform: rotate(0deg);
+              transform: scale(1) rotate(360deg);
             }
+
+            50% {
+              transform: scale(0.7) rotate(-360deg);
+            }
+
             100% {
-              transform: rotate(360deg);
+              transform: scale(1) rotate(360deg);
             }
           }
         `}

@@ -1,23 +1,21 @@
-import React from "react";
-
-const myPageExample = () => {
+const TextCut = () => {
   return (
     <>
-      <span className="container">
+      <span className="text-cut-wrapper">
         <span className="text-cut">SUMMER VIBES</span>
       </span>
-      <style jsx>
+      <style>
         {`
           @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap");
 
-          .container {
+          .text-cut-wrapper {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 450px;
             height: 250px;
 
-            background: url(/images/summer.jpg);
+            background: url("/src/assets/images/summer.jpg");
             border-radius: 16px;
             background-size: cover;
           }
@@ -36,4 +34,4 @@ const myPageExample = () => {
   );
 };
 
-export default myPageExample;
+export default TextCut;

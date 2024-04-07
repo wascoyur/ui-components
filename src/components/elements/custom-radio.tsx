@@ -1,5 +1,4 @@
-import React from "react";
-import Container from "@components/Container";
+import { Container } from "layouts/Container.tsx";
 
 const CustomRadio = () => {
   return (
@@ -25,7 +24,7 @@ const CustomRadio = () => {
           </div>
         </div>
       </Container>
-      <style jsx>
+      <style>
         {`
           .radio-container {
             display: flex;

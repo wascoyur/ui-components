@@ -5,8 +5,10 @@ import MainPage from "./containers/mainPage.tsx";
 import Menu from "./components/menu-02/Menu02.tsx";
 import ErrorPage from "./containers/404.tsx";
 import MenuTemplate from "./containers/MenuTemplate.tsx";
-import { CardsTemplate } from "./containers/CardsTemplate.tsx";
-import { Galeryes } from "containers/Galeryes.tsx";
+import { PageCards } from "containers/page-Cards.tsx";
+import { GaleryesPage } from "containers/Galeryes-page.tsx";
+import { SpinnersPage } from "containers/SpinnersPage.tsx";
+import FooterIsolated from "components/footer-01.tsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -21,11 +23,15 @@ function App() {
     },
     {
       path: "cards",
-      element: <CardsTemplate />,
+      element: <PageCards />,
     },
     {
       path: "galeries",
-      element: <Galeryes />,
+      element: <GaleryesPage />,
+    },
+    {
+      path: "spinners",
+      element: <SpinnersPage />,
     },
   ]);
 
@@ -33,6 +39,7 @@ function App() {
     <>
       <Menu />
       <RouterProvider router={router} />
+      <FooterIsolated />
     </>
   );
 }

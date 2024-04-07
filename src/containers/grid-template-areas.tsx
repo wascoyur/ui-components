@@ -1,7 +1,4 @@
-import React from "react";
-import Container from "@components/Container";
-
-const cardsHoverEffect = () => {
+const CardsHoverEffect = () => {
   return (
     <>
       <section id="layout">
@@ -10,7 +7,7 @@ const cardsHoverEffect = () => {
         <main>Main</main>
         <footer>Footer</footer>
       </section>
-      <style jsx>
+      <style>
         {`
           #layout {
             display: grid;
@@ -61,4 +58,4 @@ const cardsHoverEffect = () => {
   );
 };
 
-export default cardsHoverEffect;
+export default CardsHoverEffect;

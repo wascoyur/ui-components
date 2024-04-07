@@ -1,34 +1,36 @@
-import React from "react";
-
-const footerIsolated = () => {
+const FooterIsolated = () => {
   return (
     <>
-      <div
-        style={{ height: "100vh", width: "100vw", backgroundColor: "#1f1b3d" }}
-      ></div>
-
       <footer>
         <section className="footer-top-wrapper">
           <section className="footer-top">
             <img
               className="logo"
-              src="logos/atheros_logo_white.png"
+              src="/src/assets/logos/atheros_logo_white.png"
               title="Logo"
               alt="Logo"
             />
             <span className="social-links">
               <a>
                 <img
-                  src="icons/instagram.svg"
+                  src="/src/assets/icons/instagram.svg"
                   title="Instagram"
                   alt="Instagram"
                 />
               </a>
               <a>
-                <img src="icons/facebook.svg" title="Facebook" alt="Facebook" />
+                <img
+                  src="/src/assets/icons//facebook.svg"
+                  title="Facebook"
+                  alt="Facebook"
+                />
               </a>
               <a>
-                <img src="icons/linkedin.svg" title="Linkedin" alt="Linkedin" />
+                <img
+                  src="/src/assets/icons//linkedin.svg"
+                  title="Linkedin"
+                  alt="Linkedin"
+                />
               </a>
             </span>
           </section>
@@ -80,9 +82,10 @@ const footerIsolated = () => {
         </section>
       </footer>
 
-      <style jsx>
+      <style>
         {`
           footer {
+            position:sticky;
             background: #050028;
             box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
             font-size: 16px;
@@ -90,7 +93,6 @@ const footerIsolated = () => {
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            position: absolute;
             width: 100%;
             bottom: 0px;
           }
@@ -102,7 +104,6 @@ const footerIsolated = () => {
             gap: 48px;
             margin: 0 auto;
             padding: 16px;
-            min-height: 160px;
           }
 
           .footer-top-wrapper > section {
@@ -151,7 +152,6 @@ const footerIsolated = () => {
           }
 
           .footer-bottom {
-            height: 60px;
             margin-top: 48px;
             display: flex;
             text-align: center;
@@ -172,4 +172,4 @@ const footerIsolated = () => {
   );
 };
 
-export default footerIsolated;
+export default FooterIsolated;
