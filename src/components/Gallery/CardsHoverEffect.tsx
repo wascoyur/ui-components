@@ -1,7 +1,6 @@
-import React from "react";
-import Container from "@components/Container";
+import { Container } from "layouts/Container.tsx";
 
-const cardsHoverEffect = () => {
+const CardsHoverEffect = () => {
   return (
     <>
       <Container>
@@ -12,7 +11,7 @@ const cardsHoverEffect = () => {
           <div className="card">Card 4</div>
         </div>
       </Container>
-      <style jsx>
+      <style>
         {`
           .gallery {
             display: flex;
@@ -66,4 +65,4 @@ const cardsHoverEffect = () => {
   );
 };
 
-export default cardsHoverEffect;
+export default CardsHoverEffect;
