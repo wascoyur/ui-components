@@ -1,5 +1,6 @@
 import React from "react";
-import "./simple-card.scss";
+import s from "./simple-card.module.css";
+import classnames from "classnames";
 
 type ProductCardProps = {
   name: string;
@@ -17,9 +18,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
   imageSrc,
 }: ProductCardProps) => {
   return (
-    <div className="container page-wrapper">
+    <div className={classnames(s.container)}>
       <div className="page-inner">
-        <div className="el-wrapper">
+        <div className={s.elWrapper}>
           <div className="box-up">
             <img className="img" src={imageSrc} alt={name} />
             <div className="img-info">

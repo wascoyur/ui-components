@@ -1,0 +1,34 @@
+.range {
+    width: 200px;
+    height: 20px;
+    padding: 16px;
+    appearance: none;
+    cursor: pointer;
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
+}
+
+.range:focus {
+    outline: none;
+}
+
+.range::-webkit-slider-runnable-track {
+    display: flex;
+    align-items: center;
+    height: 10px;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 8px black;
+}
+
+.range::-webkit-slider-thumb {
+    position: relative;
+    top: -50%;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    background-color: #e0e0e0;
+    background-image: linear-gradient(-45deg, white, transparent);
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+}

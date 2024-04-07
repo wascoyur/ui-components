@@ -1,15 +1,12 @@
-import React from "react";
-import "./dark-product-card.scss";
-
 export const DarkProductCard = () => {
   return (
-    <div className="card">
-      <div className="left">
+    <div className="s.card">
+      <div className="s.left">
         <img
           src="https://www.dropbox.com/s/e928cht0h5crcn4/shoe.png?raw=1"
           alt="shoe"
         />
-        <i className="fa fa-long-arrow-left"></i>
+        <i className={"fa fa-long-arrow-left"}></i>
         <i className="fa fa-long-arrow-right"></i>
       </div>
       <div className="right">

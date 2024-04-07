@@ -1,20 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Muli");
 
-/*reset*/
-* {
-  margin: 0;
-  padding: 0;
-}
 
-/*product info */
+/* product info */
 
 h1 {
-  color: #ff6d39;
-  font-family: "muli";
-  font-weight: bold;
-  font-size: 22px;
-  margin-top: 21px;
   display: inline-block;
+  margin-top: 21px;
+  font-family: muli;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6d39;
 }
 
 i.fa.fa-search {
@@ -22,9 +17,9 @@ i.fa.fa-search {
 }
 
 .product-name i {
-  color: #ffffff;
+  margin: 0 12px;
+  color: #fff;
   transition: 0.3s all ease;
-  margin: 0px 12px;
 }
 
 .product-name i:hover {
@@ -33,37 +28,37 @@ i.fa.fa-search {
 }
 
 h3 {
-  color: #ffffff;
-  font-family: "muli";
   margin-top: 84px;
+  font-family: muli;
   font-size: 20px;
   font-weight: 500;
+  color: #fff;
 }
 
 h2 {
-  color: #ffffff;
-  font-family: "muli";
   margin-top: 10px;
-  font-weight: 800;
+  font-family: muli;
   font-size: 29px;
+  font-weight: 800;
+  color: #fff;
 }
 
 h4 {
   display: inline-block;
-  color: #ffffff;
-  font-family: "muli";
   margin-top: 10px;
-  font-weight: bold;
+  font-family: muli;
   font-size: 20px;
+  font-weight: bold;
+  color: #fff;
 }
 
 h4.dis {
   display: inline-block;
-  color: #ffffff;
-  font-family: "muli";
-  font-weight: 400;
-  font-size: 17px;
   margin-left: 30px;
+  font-family: muli;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
   text-decoration: line-through #ea3201;
 }
 
@@ -85,85 +80,85 @@ li {
 }
 
 ul li {
-  color: #ffffff;
-  font-family: "muli";
   margin-top: 20px;
-  font-weight: 500;
+  font-family: muli;
   font-size: 11px;
+  font-weight: 500;
+  color: #fff;
 }
 
 .bg {
   width: 15px;
   height: 15px;
-  text-align: center;
   padding: 2px;
   margin-right: 20px;
-  transition: 0.3s all ease;
+  text-align: center;
   border-radius: 50%;
+  transition: 0.3s all ease;
 }
 
 .bg:hover {
-  background-color: #ff6d39;
-  border-radius: 50%;
   width: 15px;
   height: 15px;
   cursor: pointer;
+  background-color: #ff6d39;
+  border-radius: 50%;
 }
 
 .yellow {
-  content: "";
   width: 13px;
   height: 13px;
+  content: "";
   background-color: #fec60f;
+  border: 2px solid rgb(0 0 0 / 0%);
   border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0);
   transition: 0.3s all ease;
 }
 
 .black {
-  content: "";
   width: 13px;
   height: 13px;
-  background-color: #000000;
+  content: "";
+  background-color: #000;
+  border: 2px solid rgb(0 0 0 / 0%);
   border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0);
   transition: 0.3s all ease;
 }
 
 .blue {
-  content: "";
   width: 13px;
   height: 13px;
+  content: "";
   background-color: #02a2ca;
+  border: 2px solid rgb(0 0 0 / 0%);
   border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0);
   transition: 0.3s all ease;
 }
 
 .yellow:hover,
 .black:hover,
 .blue:hover {
-  border: 2px solid #f76b39;
   width: 13px;
   height: 13px;
-  border-radius: 50%;
   cursor: pointer;
+  border: 2px solid #f76b39;
+  border-radius: 50%;
 }
 
 .foot {
-  color: #ffffff;
-  font-family: "muli";
+  float: left;
   margin-top: 20px;
   margin-right: 50px;
-  font-weight: 500;
+  font-family: muli;
   font-size: 11px;
-  float: left;
+  font-weight: 500;
+  color: #fff;
   transition: 0.3s all ease;
 }
 
 .foot i:nth-child(1) {
-  margin-left: 0;
   margin-right: 15px;
+  margin-left: 0;
 }
 
 .foot:hover {
@@ -171,11 +166,11 @@ ul li {
   cursor: pointer;
 }
 
-/*shoe slider indicator*/
+/* shoe slider indicator */
 
 .left i {
-  color: #ffd5c6;
   margin-top: 260px;
+  color: #ffd5c6;
   transition: 0.3s all ease;
 }
 
@@ -188,55 +183,54 @@ ul li {
 }
 
 .left i:hover {
-  cursor: pointer;
   color: #2a2f40;
+  cursor: pointer;
 }
 
-/*main card*/
+/* main card */
 
 .card {
   display: flex;
   align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 2% auto 0;
   background: #252831
-    url(https://www.dropbox.com/s/fuadz3vmw2nsylm/bg.png?raw=1) no-repeat;
-  height: 600px;
-  width: 800px;
-  margin: 0 auto;
-  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.4);
-  margin-top: 2%;
+    url("https://www.dropbox.com/s/fuadz3vmw2nsylm/bg.png?raw=1") no-repeat;
+  box-shadow: 0 15px 50px 10px rgb(0 0 0 / 40%);
 }
 
 .left {
-  content: "";
-  height: 395px;
-  width: 330px;
-  display: flex;
-  align-items: center;
-  background-color: #ff6d39;
-  margin-left: 93px;
-  border-radius: 0% 50% 50% 0%;
   position: absolute;
   z-index: 5;
+  display: flex;
+  align-items: center;
+  width: 330px;
+  height: 395px;
+  margin-left: 93px;
+  content: "";
+  background-color: #ff6d39;
+  border-radius: 0% 50% 50% 0%;
 }
 
 .left img {
-  margin-left: -88px;
   margin-top: 60px;
+  margin-left: -88px;
 }
 
 .right {
-  content: "";
-  height: 395px;
-  width: 550px;
-  background-color: #2a2f40;
   z-index: 3;
+  width: 550px;
+  height: 395px;
   margin-left: 200px;
+  content: "";
+  background-color: #2a2f40;
 }
 
 .product-info {
   position: absolute;
-  margin-left: 245px;
-  height: 394px;
-  width: 305px;
   z-index: 10;
+  width: 305px;
+  height: 394px;
+  margin-left: 245px;
 }

@@ -7,5 +7,6 @@ module.exports = {
         "nesting-rules": true,
       },
     }),
+
     ]
 }

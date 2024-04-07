@@ -13,8 +13,8 @@
         display: grid;
         justify-content: center;
         align-items: center;
-        grid-template-columns: repeat(auto-fit, 1fr);
-        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap:1rem
     }
 }

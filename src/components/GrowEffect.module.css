@@ -2,13 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3f396f;
-    width: 100vw;
-    height: 100vh;
-}
+    background-color: #d746cf;
+    width: 30vw;
+    height: 30vh;
 
-.button-glow {
-    width: 240px;
+    .button-glow {
+    width: 50px;
     height: 55px;
     text-decoration: none;
     display: grid;
@@ -20,6 +19,9 @@
     border-radius: 16px;
     transition: all 0.5s;
 }
+}
+
+
 
 .button-glow:hover {
     color: #ff9950;

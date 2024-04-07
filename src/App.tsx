@@ -6,6 +6,7 @@ import Menu from "./components/menu-02/Menu02.tsx";
 import ErrorPage from "./containers/404.tsx";
 import MenuTemplate from "./containers/MenuTemplate.tsx";
 import { CardsTemplate } from "./containers/CardsTemplate.tsx";
+import { Galeryes } from "containers/Galeryes.tsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -21,6 +22,10 @@ function App() {
     {
       path: "cards",
       element: <CardsTemplate />,
+    },
+    {
+      path: "galeries",
+      element: <Galeryes />,
     },
   ]);
 
