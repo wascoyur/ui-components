@@ -4,6 +4,7 @@ import CardsHoverEffect from "../components/CardsHoverEffect/CardsHoverEffect.ts
 import CustomRange from "../components/CustomRange/CustomSliderRange.tsx";
 import CustomRadio from "components/elements/custom-radio.tsx";
 import FlexGrowEffect from "components/effects/flex-grow-effect.tsx";
+import GridAccordeon from "components/effects/GridAccordeon.tsx";
 
 const MainPage = () => {
   return (
@@ -15,6 +16,7 @@ const MainPage = () => {
         <CustomRange />
         <CustomRadio />
         <FlexGrowEffect />
+        <GridAccordeon />
       </div>
     </div>
   );
