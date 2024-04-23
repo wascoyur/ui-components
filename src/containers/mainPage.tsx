@@ -5,6 +5,7 @@ import CustomRange from "../components/CustomRange/CustomSliderRange.tsx";
 import CustomRadio from "components/elements/custom-radio.tsx";
 import FlexGrowEffect from "components/effects/flex-grow-effect.tsx";
 import GridAccordeon from "components/effects/GridAccordeon.tsx";
+import { RunnerString } from "components/effects/runnerString/RunnerString.tsx";
 
 const MainPage = () => {
   return (
@@ -17,6 +18,7 @@ const MainPage = () => {
         <CustomRadio />
         <FlexGrowEffect />
         <GridAccordeon />
+        <RunnerString />
       </div>
     </div>
   );
