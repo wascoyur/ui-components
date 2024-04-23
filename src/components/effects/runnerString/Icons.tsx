@@ -1,6 +1,6 @@
 export const Nikon = (props?: { className: string }) => {
   return (
-    <div>
+    <div className={props?.className}>
       <svg
         width="103"
         height="29"

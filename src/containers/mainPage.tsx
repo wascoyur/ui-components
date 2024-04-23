@@ -6,6 +6,7 @@ import CustomRadio from "components/elements/custom-radio.tsx";
 import FlexGrowEffect from "components/effects/flex-grow-effect.tsx";
 import GridAccordeon from "components/effects/GridAccordeon.tsx";
 import { RunnerString } from "components/effects/runnerString/RunnerString.tsx";
+import { Wiggle } from "components/effects/Wiggle.tsx";
 
 const MainPage = () => {
   return (
@@ -19,6 +20,7 @@ const MainPage = () => {
         <FlexGrowEffect />
         <GridAccordeon />
         <RunnerString />
+        <Wiggle />
       </div>
     </div>
   );
