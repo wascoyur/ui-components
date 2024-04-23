@@ -6,7 +6,6 @@ import { ThreeDots } from "components/spinners/ThreeDots.tsx";
 export function SpinnersPage() {
   return (
     <div className={s.root}>
-      <h1>SpinnersPage</h1>
       <div className={s.container}>
         <CustomLoader />
         <CustomLoaderV1 />

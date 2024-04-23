@@ -19,6 +19,7 @@ const Navigation = () => {
       { name: `Карточки`, path: `cards` },
       { name: `Galery`, path: `galeries` },
       { name: `Spinners`, path: `spinners` },
+      { name: `Effects`, path: `effects` },
       // `Кнопки`,
       // `Продуктовые карточки`,
       // `футер`,

@@ -9,6 +9,7 @@ import { PageCards } from "containers/page-Cards.tsx";
 import { GaleryesPage } from "containers/Galeryes-page.tsx";
 import { SpinnersPage } from "containers/SpinnersPage.tsx";
 import FooterIsolated from "components/footer-01.tsx";
+import { PageEffects } from "containers/PageEffects.tsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -32,6 +33,10 @@ function App() {
     {
       path: "spinners",
       element: <SpinnersPage />,
+    },
+    {
+      path: "effects",
+      element: <PageEffects />,
     },
   ]);
 
