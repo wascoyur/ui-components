@@ -1,5 +1,5 @@
 import s from "./ThreeDots.module.css";
-
+/*https://codepen.io/petersonby/pen/gzxpdj*/
 export const ThreeDots = () => {
   return (
     <div className={s.root}>
