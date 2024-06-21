@@ -7,6 +7,7 @@ import FlexGrowEffect from "components/effects/flex-grow-effect.tsx";
 import GridAccordeon from "components/effects/GridAccordeon.tsx";
 import { RunnerString } from "components/effects/runnerString/RunnerString.tsx";
 import { Wiggle } from "components/effects/Wiggle.tsx";
+import { Pulser } from "components/effects/pulser/Pulser.tsx";
 
 const MainPage = () => {
   return (
@@ -21,6 +22,9 @@ const MainPage = () => {
         <GridAccordeon />
         <RunnerString />
         <Wiggle />
+        <div className={s.item}>
+          <Pulser />
+        </div>
       </div>
     </div>
   );

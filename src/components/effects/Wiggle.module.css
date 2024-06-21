@@ -1,5 +1,8 @@
-.root {
-    margin: auto;
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a66c2;
 
    button {
         top: calc(50% - 2em);
