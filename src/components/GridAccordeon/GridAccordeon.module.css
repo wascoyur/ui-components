@@ -1,0 +1,15 @@
+.container-accordeon {
+    display: grid;
+    grid-template-rows: 0fr;
+    padding: 1rem;
+    background-color: hsl(200deg 50% 50%);
+    transition: grid-template-rows 500ms;
+}
+
+.container-accordeon > div {
+    overflow: hidden;
+}
+
+.container-accordeon:hover {
+    grid-template-rows: 1fr;
+}
