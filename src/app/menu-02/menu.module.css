@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 :root {
   --primary: #dd946f;
   --primary-hover: #cd7d7c;
@@ -16,38 +17,39 @@
 
 
 }
+
 .logo {
   width: 32px;
-  height: 32px;
-  cursor: pointer;
   max-width: 100%;
+  height: 32px;
   margin: auto;
+  cursor: pointer;
 
   a {
     max-width: 100%;
   }
 }
+
 .menu__bar {
   position: fixed;
-  width: 100%;
   display: grid;
-  grid-auto-flow: column  ;
   grid-template-columns: repeat(3,1fr);
-
-
+  grid-auto-flow: column  ;
+  width: 100%;
   background-color: var(--background);
   opacity: 0.9;
 }
 
 .menu-icon {
-  cursor: pointer;
   display: flex;
-  height: 32px;
   width: 32px;
+  height: 32px;
+  cursor: pointer;
 
   .closeIcon {
     max-width: 100%;
   }
+
   .burger-menu {
    max-width:100% ;
   }
@@ -56,59 +58,60 @@
 .navigation {
   display: flex;
   flex-direction: row;
-  list-style-type: none;
+  gap: 24px;
   align-items: center;
   justify-content: center;
-  gap: 24px;
   padding: 0;
+  list-style-type: none;
   background-color: var(--background);
 }
 
 
 
 .navigation > li {
-  display: flex;
   position: relative;
-  cursor: pointer;
+  display: flex;
   font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .navigation > li > a {
-  color: white;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
-  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 3px 0;
   font-weight: 500;
+  color: white;
+  text-decoration: none;
   background-image: linear-gradient(
     to right,
     var(--primary-hover),
     var(--primary-hover) 50%,
     white 50%
   );
-  background-size: 200% 100%;
   background-position: -100%;
-  display: inline-block;
-  padding: 3px 0;
-  position: relative;
-  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200% 100%;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
   -webkit-text-fill-color: transparent;
 }
 
-.navigation > li > a:before {
-  content: "";
-  background: var(--primary-hover);
-  display: block;
+.navigation > li > a::before {
   position: absolute;
   bottom: -2px;
   left: 0;
+  display: block;
   width: 0;
   height: 2px;
+  content: "";
+  background: var(--primary-hover);
   transition: all 0.2s ease-in-out;
 }
 
 .navigation > li > a:hover {
   background-position: 0;
 }
+
 /*  hover effect inspired by
     https://codepen.io/team/css-tricks/pen/OJOXWPp
 */
@@ -117,13 +120,13 @@
   width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
   .menu-icon {
     display: none;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .navigation {
     display: none;
   }
@@ -133,30 +136,31 @@
   }
 
   .navigation--mobile {
-    top: var(--navbar-height);
     position: absolute;
+    top: var(--navbar-height);
     right: 0;
     display: flex;
-    padding: 80px 60px;
-    min-height: 100%;
-    background-color: var(--background);
-    gap: 8px;
     flex-direction: column;
+    gap: 8px;
     align-items: flex-start;
+    min-height: 100%;
+    padding: 80px 60px;
+    background-color: var(--background);
     opacity: 0.95;
     animation: fadein 0.3s forwards;
   }
 
   @keyframes fadein {
     0% {
-      opacity: 0;
       width: 0;
       height: 0;
+      opacity: 0;
     }
+
     100% {
-      opacity: 1;
       width: 100%;
       height: calc(100vh - var(--navbar-height));
+      opacity: 1;
     }
   }
 
@@ -166,14 +170,15 @@
 
   @keyframes fadeout {
     0% {
-      opacity: 1;
       width: 100%;
       height: calc(100vh - var(--navbar-height));
+      opacity: 1;
     }
+
     100% {
-      opacity: 0;
       width: 0;
       height: 0;
+      opacity: 0;
     }
   }
 }

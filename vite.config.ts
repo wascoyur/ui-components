@@ -23,4 +23,13 @@ export default defineConfig({
     alias,
   },
   plugins: [react()],
+  css: {
+    modules: {
+      localsConvention: "dashesOnly",
+      generateScopedName: (name: string, filePath: string): string => {
+        const [, fileName] = filePath.split("/").reverse();
+        return `${fileName}_${name}`;
+      },
+    },
+  },
 });
