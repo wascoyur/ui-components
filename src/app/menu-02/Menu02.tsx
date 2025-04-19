@@ -1,10 +1,10 @@
 import s from "./menu.module.css";
-import classnames from "classnames";
+import cn from "classnames";
 
-const Menu = () => {
+const Menu = ({className}:{className?:string}) => {
   return (
-    <div className={s.root}>
-      <div className={s.menu__bar}>
+    <div className={cn(s.root,className)}>
+      <div className={s.menuBar}>
         <Navigation />
       </div>
     </div>
@@ -42,6 +42,6 @@ const Navigation = () => {
     ));
   };
 
-  return <ul className={classnames(s.navigation)}>{menuItems()}</ul>;
+  return <ul className={cn(s.navigation)}>{menuItems()}</ul>;
 };
 export default Menu;

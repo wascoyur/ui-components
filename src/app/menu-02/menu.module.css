@@ -30,7 +30,7 @@
   }
 }
 
-.menu__bar {
+.menu-bar {
   position: fixed;
   display: grid;
   grid-template-columns: repeat(3,1fr);

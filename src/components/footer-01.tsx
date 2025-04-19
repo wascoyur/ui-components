@@ -1,8 +1,10 @@
-const FooterIsolated = () => {
+import cn from "classnames";
+
+const FooterIsolated = ({className}:{className?:string}) => {
   return (
     <>
       <footer>
-        <section className="footer-top-wrapper">
+        <section className={cn("footer-top-wrapper",className)}>
           <section className="footer-top">
             <img
               className="logo"
