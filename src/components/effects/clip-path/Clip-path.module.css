@@ -1,0 +1,33 @@
+.root {
+
+}
+
+.shape {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    margin: 0.5rem;
+}
+
+.circle {
+    position: relative;
+    height: 50%;
+    clip-path: circle(20px at 0 0);
+    background-color: #00c896;
+}
+
+.circle:hover {
+    clip-path: circle(50px at 0 0);
+    transition: clip-path 0.5s ease-in-out, 0.3s ease-in-out;
+}
+
+.circle:not(:hover) {
+    clip-path: circle(20px at 0 0);
+    transition: clip-path 0.5s ease-in-out, 0.3s ease-in-out;
+}
+
+.circle:nth-of-type(2){
+    background-color: #1d9bf0;
+    clip-path: circle(20px at 0 bottom);
+}
