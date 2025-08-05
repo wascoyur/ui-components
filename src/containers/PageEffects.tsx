@@ -1,16 +1,21 @@
 import s from "./RootPageStyles.module.css";
-import { FloatItem } from "components/effects/FloatItem.tsx";
+import {FloatItem} from "components/effects/FloatItem.tsx";
+import {Wiggle} from "components/effects/Wiggle.tsx";
+import FlexGrowPage from "components/effects/flex-grow-effect.tsx";
+import {RunnerString} from "components/effects/runnerString/RunnerString.tsx";
+import {Pulser} from "components/effects/pulser/Pulser.tsx";
 
 export function PageEffects() {
-  type ListItem<T extends any[]> = T extends (infer X)[] ? X : never;
-  const arr: ListItem<number[]> = [1, 3];
 
-  console.log(arr.valueOf());
-  return (
-    <div className={s.root}>
-      <div className={s.container}>
-        <FloatItem />
-      </div>
-    </div>
-  );
+    return (
+        <div className={s.root}>
+            <div className={s.container}>
+                <FloatItem/>
+                <Wiggle/>
+                <FlexGrowPage/>
+                <RunnerString/>
+                <Pulser/>
+            </div>
+        </div>
+    );
 }
