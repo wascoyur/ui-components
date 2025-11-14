@@ -20,6 +20,7 @@ const Navigation = () => {
       { name: `Galery`, path: `galeries` },
       { name: `Spinners`, path: `spinners` },
       { name: `Effects`, path: `effects` },
+      { name: `Sliders`, path: `sliders` },
       // `Кнопки`,
       // `Продуктовые карточки`,
       // `футер`,

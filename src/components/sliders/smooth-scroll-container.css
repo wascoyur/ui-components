@@ -1,0 +1,21 @@
+/* smooth-scroll-container.css */
+.pane {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    height: 80vh;
+}
+nav {
+    background: #f0f0f0;
+    padding: 1rem;
+}
+.content {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.content section {
+    height: 70vh;
+    border-bottom: 1px solid #ddd;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+}

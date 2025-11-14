@@ -5,7 +5,8 @@ import MenuTemplate from "containers/MenuTemplate.tsx";
 import { PageCards } from "containers/page-Cards.tsx";
 import { GaleryesPage } from "containers/Galeryes-page.tsx";
 import { SpinnersPage } from "containers/SpinnersPage.tsx";
-import { PageEffects } from "containers/PageEffects.tsx";
+import { PageEffects } from "containers/page-effects.tsx";
+import { PageSliders } from "containers/page-sliders.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -32,5 +33,9 @@ export const router = createBrowserRouter([
   {
     path: "effects",
     element: <PageEffects />,
+  },
+  {
+    path: "sliders",
+    element: <PageSliders />,
   },
 ]);

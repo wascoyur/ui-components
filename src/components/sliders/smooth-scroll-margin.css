@@ -1,0 +1,21 @@
+/* smooth-scroll-margin.css */
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: #222;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+#target {
+  scroll-margin-top: 80px;
+}
+main {
+  padding-top: 64px;
+}

@@ -1,0 +1,26 @@
+/* smooth-scroll.css */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font:
+    16px/1.5 system-ui,
+    sans-serif;
+}
+.toc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+}
+section {
+  height: 100vh;
+  padding: 5rem 2rem 2rem;
+  border-bottom: 1px solid #eee;
+}
