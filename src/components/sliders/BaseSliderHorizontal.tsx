@@ -1,4 +1,4 @@
-import s from "./BaseSlider.module.css";
+import s from "./styles/BaseSlider.module.css";
 
 export const BaseSliderHorizontal = () => {
   return (

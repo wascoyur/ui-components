@@ -1,0 +1,32 @@
+/* lightbox-target.css */
+body {
+  margin: 0;
+  font:
+    16px/1.4 system-ui,
+    sans-serif;
+}
+.thumb img {
+  display: block;
+  border-radius: 8px;
+}
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: #0008;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox:target {
+  display: flex;
+}
+.lightbox img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px #0008;
+}
+.close {
+  position: absolute;
+  inset: 0;
+}

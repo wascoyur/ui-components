@@ -1,11 +1,9 @@
-import { CentringSlider } from "components/sliders/CentringSlider.tsx";
-import { BaseSliderHorizontal } from "components/sliders/BaseSliderHorizontal.tsx";
+import { Sliders } from "components/sliders/Sliders.tsx";
 
 export const PageSliders = () => {
   return (
     <div>
-      <BaseSliderHorizontal />
-      <CentringSlider />
+      <Sliders />
     </div>
   );
 };

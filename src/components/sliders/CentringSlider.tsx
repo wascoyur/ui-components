@@ -1,4 +1,4 @@
-import s from "./CentringSlider.module.css";
+import s from "./styles/CentringSlider.module.css";
 
 export const CentringSlider = () => {
   return (

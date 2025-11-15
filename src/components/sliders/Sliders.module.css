@@ -1,0 +1,160 @@
+.page {
+  font:
+    16px/1.4 system-ui,
+    sans-serif;
+  margin: 0;
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.block {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+}
+
+/* Scroll-snap */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+}
+.slide {
+  flex: 0 0 80%;
+  background: #e9f2ff;
+  border-radius: 8px;
+  padding: 2rem;
+  scroll-snap-align: start;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+.toc {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.section {
+  height: 200px;
+  border: 1px solid #eee;
+  margin-bottom: 1rem;
+}
+
+/* Lightbox */
+.thumb {
+  border-radius: 8px;
+}
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: #0008;
+  display: none;
+  place-items: center;
+}
+.lightbox:target {
+  display: grid;
+}
+.close {
+  position: absolute;
+  inset: 0;
+}
+
+/* Accordion */
+.item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+.item summary {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+.content {
+  padding: 0.5rem 1rem;
+}
+
+/* Parallax */
+.hero {
+  min-height: 200px;
+  background: url("https://picsum.photos/id/1018/800/400") center/cover
+    no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+.content {
+  padding: 1rem;
+}
+
+/* Prefers-reduced-motion */
+.pulse {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  animation: pulse 1.2s infinite;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.05);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pulse {
+    animation: none;
+  }
+}
+
+/* Inert modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: #0008;
+  display: none;
+  place-items: center;
+}
+.modal:target {
+  display: grid;
+}
+.box {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.back {
+  position: absolute;
+  inset: 0;
+}
+
+/* Lazy images */
+.card {
+  content-visibility: auto;
+  contain-intrinsic-size: 300px;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Fluid typography */
+.fluidH1 {
+  font-size: clamp(1.5rem, 1rem + 2vw, 3rem);
+}
+.fluidP {
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
+}
