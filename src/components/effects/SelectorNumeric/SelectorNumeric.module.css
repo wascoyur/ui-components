@@ -1,0 +1,108 @@
+.root {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid grey;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+
+.quantityPicker {
+  --font-size: 2rem;
+  --track-height: calc(var(--font-size) * 1.5);
+  --bg-invalid: hsl(0 100% 50% / 0.14);
+
+  position: relative;
+  display: inline-block;
+  font-family: system-ui, sans-serif;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.input {
+  appearance: none;
+  -moz-appearance: textfield; /* Убираем стрелки в Firefox */
+  width: 6ch;
+  padding: 0.75rem 2.5rem;
+  font-size: var(--font-size);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  background: transparent;
+  border: 2px solid #333;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+/* Стилизуем стрелки */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  appearance: none;
+  position: absolute;
+  inset: 0;
+  width: 2.5rem;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* "Слот-машинная" анимация для изменения цифр */
+.input::-webkit-inner-spin-button {
+  background: linear-gradient(0deg, #333 30%, transparent 30% 70%, #333 70%) center/100%     var(--track-height) no-repeat, linear-gradient(180deg, #333 30%, transparent 30% 70%, #333 70%)      center/100% var(--track-height) no-repeat;
+  background-position-y: 10%, 100%;
+  mask:
+        /* Верхняя стрелка */
+    conic-gradient(
+        from 90deg at 50% 25%,
+        transparent 25%,
+        #d01c1c 25% 75%,
+        transparent 75%
+      )
+      50% 25% / 50% 50% no-repeat,
+    /* Нижняя стрелка */
+      conic-gradient(
+        from -90deg at 50% 75%,
+        transparent 25%,
+        rgba(0, 255, 255, 0.44) 25% 75%,
+        transparent 75%
+      )
+      50% 75% / 50% 50% no-repeat;
+}
+
+/* Анимация тряски + красный фон при неверном значении (не в фокусе) */
+.quantityPicker:has(:invalid):not(:focus-within) {
+  animation: shake 0.5s ease-in-out;
+  background: var(--bg-invalid);
+  border-radius: 0.5rem;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-4px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(4px);
+  }
+}
+
+/* Дополнительно: лёгкий ховер эффект */
+.input:hover {
+  border-color: #555;
+}
+
+.input:focus {
+  border-color: #0066ff;
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.2);
+}

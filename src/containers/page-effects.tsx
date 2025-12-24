@@ -5,6 +5,7 @@ import FlexGrowPage from "components/effects/flex-grow-effect.tsx";
 import { RunnerString } from "components/effects/runnerString/RunnerString.tsx";
 import { Pulser } from "components/effects/pulser/Pulser.tsx";
 import { ClipPath } from "components/effects/clip-path/ClipPath.tsx";
+import { SelectorNumeric } from "components/effects/SelectorNumeric/SelectorNumeric.tsx";
 
 export function PageEffects() {
   return (
@@ -16,6 +17,7 @@ export function PageEffects() {
         <RunnerString />
         <Pulser />
         <ClipPath />
+        <SelectorNumeric />
       </div>
     </div>
   );

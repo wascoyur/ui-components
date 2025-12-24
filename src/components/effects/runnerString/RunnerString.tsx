@@ -4,7 +4,7 @@ import s from "./Runner-string.module.css";
 /*https://codepen.io/get-web/pen/wvZeaEr*/
 export const RunnerString = () => {
   return (
-    <div>
+    <div className={s.root}>
       <h3>Runner String</h3>
       <div className={s.box}>
         <div className={s.element}>

@@ -17,6 +17,7 @@ const FlexGrowPage = () => {
           .gallery {
             display: flex;
             gap: 4px;
+            
           }
 
           .card {

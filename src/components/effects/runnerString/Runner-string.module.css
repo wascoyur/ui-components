@@ -1,3 +1,9 @@
+.root {
+    border: 1px solid grey;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+}
+
 .box {
     display: flex;
     align-items: flex-end;
